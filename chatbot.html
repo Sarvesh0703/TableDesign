@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Chatbot HTML -->
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined"><img src="images/chatbot-gif-img.png" width="80" alt=""></span>
+        <span class="material-symbols-outlined"><i class="fa-solid fa-xmark"></i></span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <p>Please send your message and we will get back to you as soon as possible.</p>
+            <span class="close-btn material-symbols-outlined"><i class="fa-solid fa-xmark"></i></span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined"><i
+                        class="fa-regular fa-face-grin-tongue-squint"></i>smart_toy</span>
+                <p>Hi there <br> How can I help you today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea name="" id="input" placeholder="Enter a message..." required></textarea>
+            <span class="material-symbols-outlined"><i class="fa-solid fa-paper-plane"></i></span>
+        </div>
+    </div>
+    <!-- Chatbot HTML -->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

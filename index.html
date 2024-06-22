@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title"><i class="fa fa-dashboard"></i> <span>Admin</span></a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="images/user.jfif" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome,</span>
+                            <h2>John Doe</h2>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <!-- Sdiebar Menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <h3>General</h3>
+                            <ul class="nav side-menu">
+                                <!-- <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Dashboard</a></li>
+                                        <li><a href="#">Dashboard2</a></li>
+                                        <li><a href="#">Dashboard3</a></li>
+                                    </ul>
+                                </li> -->
+                                <li><a href="login-page.html"><i class="fa fa-edit"></i> Forms</a>
+
+                                </li>
+                                <li><a href="#"><i class="fa fa-desktop"></i> UI Elements</a>
+                                </li>
+                                <li><a href="all-requisitions.html"><i class="fa fa-table"></i> All Requisitions</a>
+
+                                </li>
+                                <li><a href="#"><i class="fa fa-solid fa-chart-column"></i> Data Presentation</a>
+                                </li>
+                                <li><a href="chart.html"><i class="fa fa-clone"></i>Layouts</a>
+                                </li>
+                                <li><a href="chatbot.html"><i class="fa fa-clone"></i>Chatbot</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- Sdiebar Menu -->
+
+                    <!-- Footer -->
+                    <div class="sidebar-footer hidden-small">
+                        <a data-toggle="tooltip" data-placement="top" title="Settings">
+                            <i class="fa fa-gear"></i>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Lock">
+                            <i class="fa fa-lock"></i>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Logout" href="#">
+                            <i class="fa fa-power-off"></i>
+                        </a>
+                    </div>
+                    <!-- Footer -->
+                </div>
+            </div>
+
+            <!-- Topbar Navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                            <!-- <div class="search-box">
+                                <input type="text" placeholder="Search here..." /><span><i class=" fa fa-search"></i></span>
+                            </div> -->
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <div class="search-box">
+                                    <input type="text" placeholder="Search here..." /><span><i
+                                            class=" fa fa-search"></i></span>
+                                </div>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="images/user.jfif" alt="">John Doe
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href="javascript:;"> Profile</a></li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="badge bg-red pull-right">50%</span>
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="javascript:;">Help</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                                </ul>
+                            </li>
+                            <li role="presentation" class="dropdown">
+                                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <span class="badge bg-green">6</span>
+                                </a>
+                                <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                                    <li>
+                                        <a>
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were
+                                                where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were
+                                                where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were
+                                                where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were
+                                                where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="text-center">
+                                            <a>
+                                                <strong>See All Alerts</strong>
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- <div class="top-header">
+                    <div class="bg-top">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+            <!-- Topbar Navigation -->
+
+            <!-- Main Content -->
+            <div class="right_col" role="main">
+                <div class="row">
+                    <div class="dashboard-boxes">
+                        <div class="col-lg-3">
+                            <div class="box1">
+                                <div class="icon-right">
+                                    <i class="fa-solid fa-person-circle-check"></i>
+                                </div>
+                                <div class="content-left">
+                                    <h2>Approval Pending</h2>
+                                    <span><b>480</b></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="box2">
+                                <div class="icon-right bg-1">
+                                    <i class="fa-solid fa-download"></i>
+                                </div>
+                                <div class="content-left">
+                                    <h2>Download</h2>
+                                    <span><b>290</b></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="box3">
+                                <div class="icon-right bg-2">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <div class="content-left">
+                                    <h2>Messages</h2>
+                                    <span><b>90</b></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="box4">
+                                <div class="icon-right bg-3">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <div class="content-left">
+                                    <h2>Total</h2>
+                                    <span><b>1246</b></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Dropdown <i
+                            class="fa-solid fa-angle-down"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div> -->
+
+                <div class="form-area">
+                    <div class="container">
+
+                        <!-- Dropdown Menu -->
+
+                        <!-- <div class="row">
+                            <div class="col-md-2">
+                                <div class="dropdown-container">
+                                    <div class="dropdown-toggle click-dropdown">
+                                        DropDown Menu
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="#">DropDown Menu Item 1</a></li>
+                                            <li><a href="#">DropDown Menu Item 2</a></li>
+                                            <li><a href="#">DropDown Menu Item 3</a></li>
+                                            <li><a href="#">DropDown Menu Item 4</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="dropdown-container">
+                                    <div class="dropdown-toggle click-dropdown">
+                                        DropDown Menu <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="#">DropDown Menu Item 1</a></li>
+                                            <li><a href="#">DropDown Menu Item 2</a></li>
+                                            <li><a href="#">DropDown Menu Item 3</a></li>
+                                            <li><a href="#">DropDown Menu Item 4</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="dropdown-container">
+                                    <div class="dropdown-toggle click-dropdown">
+                                        DropDown Menu <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="#">DropDown Menu Item 1</a></li>
+                                            <li><a href="#">DropDown Menu Item 2</a></li>
+                                            <li><a href="#">DropDown Menu Item 3</a></li>
+                                            <li><a href="#">DropDown Menu Item 4</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="dropdown-container">
+                                    <div class="dropdown-toggle click-dropdown">
+                                        DropDown Menu <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="#">DropDown Menu Item 1</a></li>
+                                            <li><a href="#">DropDown Menu Item 2</a></li>
+                                            <li><a href="#">DropDown Menu Item 3</a></li>
+                                            <li><a href="#">DropDown Menu Item 4</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="dropdown-container">
+                                    <div class="dropdown-toggle click-dropdown">
+                                        DropDown Menu <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="#">DropDown Menu Item 1</a></li>
+                                            <li><a href="#">DropDown Menu Item 2</a></li>
+                                            <li><a href="#">DropDown Menu Item 3</a></li>
+                                            <li><a href="#">DropDown Menu Item 4</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="dropdown-container">
+                                    <div class="dropdown-toggle click-dropdown">
+                                        DropDown Menu <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="#">DropDown Menu Item 1</a></li>
+                                            <li><a href="#">DropDown Menu Item 2</a></li>
+                                            <li><a href="#">DropDown Menu Item 3</a></li>
+                                            <li><a href="#">DropDown Menu Item 4</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- Dropdown Menu -->
+
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="did-floating-label-content">
+                                    <input class="did-floating-input" type="text" placeholder="">
+                                    <label class="did-floating-label">First Name*</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="did-floating-label-content">
+                                    <input class="did-floating-input" type="text" placeholder="">
+                                    <label class="did-floating-label">First Name*</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="did-floating-label-content">
+                                    <input class="did-floating-input" type="text" placeholder="">
+                                    <label class="did-floating-label">First Name*</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="did-floating-label-content">
+                                    <input class="did-floating-input" type="text" placeholder="">
+                                    <label class="did-floating-label">First Name*</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="did-floating-label-content selction_dropdown">
+                                    <select class="did-floating-select"
+                                        onclick="this.setAttribute('value', this.value);"
+                                        onchange="this.setAttribute('value', this.value);" value="">
+                                        <option value=""></option>
+                                        <option value="1">Alabama</option>
+                                        <option value="2">Boston</option>
+                                        <option value="3">Ohaio</option>
+                                        <option value="4">New York</option>
+                                        <option value="5">Washington</option>
+                                    </select>
+                                    <label class="did-floating-label">Select</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="did-floating-label-content">
+                                    <input class="did-floating-input" type="text" placeholder="">
+                                    <label class="did-floating-label">First Name*</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="did-floating-label-content">
+                                    <input class="did-floating-input" type="text" placeholder="">
+                                    <label class="did-floating-label">First Name*</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="did-floating-label-content">
+                                    <input class="did-floating-input" type="text" placeholder="">
+                                    <label class="did-floating-label">First Name*</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="did-floating-label-content">
+                                    <input class="did-floating-input" type="text" placeholder="">
+                                    <label class="did-floating-label">First Name*</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="did-floating-label-content selction_dropdown">
+                                    <select class="did-floating-select"
+                                        onclick="this.setAttribute('value', this.value);"
+                                        onchange="this.setAttribute('value', this.value);" value="">
+                                        <option value=""></option>
+                                        <option value="1">Alabama</option>
+                                        <option value="2">Boston</option>
+                                        <option value="3">Ohaio</option>
+                                        <option value="4">New York</option>
+                                        <option value="5">Washington</option>
+                                    </select>
+                                    <label class="did-floating-label">Select</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="did-floating-label-content did-error-input">
+                                    <select class="did-floating-select error-input"
+                                        onclick="this.setAttribute('value', this.value);" value="">
+                                        <option value=""></option>
+                                        <option value="1">Alabama</option>
+                                        <option value="2">Boston</option>
+                                        <option value="3">Ohaio</option>
+                                        <option value="4">New York</option>
+                                        <option value="5">Washington</option>
+                                    </select>
+                                    <label class="did-floating-label error">Select</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="did-floating-label-content did-error-input">
+                                    <input class="did-floating-input error-input" type="text" placeholder="">
+                                    <label class="did-floating-label">Sale Price</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button Section -->
+                        <div class="button-box">
+                            <button class="btn-save">
+                                <div class="txt">Submit</div>
+                                <div class="icon"><svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linejoin="round">
+                                            <polyline id="Stroke-1" stroke="#FFFFFF" stroke-width="3"
+                                                points="16 1 6.0545606 14 1 9.26518783"></polyline>
+                                        </g>
+                                    </svg></div>
+                            </button>
+
+                            <button class="btn-reset" type="reset">
+                                <div class="">Reset</div>
+                            </button>
+                        </div>
+
+                        <!-- Button Section -->
+                    </div>
+
+                    <!-- <div class="bottom-design">
+                        <div class="design-box">
+                            <div class="small-box"></div>
+                            <span>Assigned</span>
+                        </div>
+
+                        <div class="design-box">
+                            <div class="small-box bg-color-2"></div>
+                            <span>Assigned</span>
+                        </div>
+
+                        <div class="design-box">
+                            <div class="small-box"></div>
+                            <span>Assigned</span>
+                        </div>
+
+                        <div class="design-box">
+                            <div class="small-box bg-color-2"></div>
+                            <span>Assigned</span>
+                        </div>
+
+                        <div class="design-box">
+                            <div class="small-box"></div>
+                            <span>Assigned</span>
+                        </div>
+
+                        <div class="design-box">
+                            <div class="small-box bg-color-2"></div>
+                            <span>Assigned</span>
+                        </div>
+
+                        <div class="design-box">
+                            <div class="small-box"></div>
+                            <span>Assigned</span>
+                        </div>
+
+                        <div class="design-box">
+                            <div class="small-box bg-color-2"></div>
+                            <span>Assigned</span>
+                        </div>
+
+                        <div class="design-box">
+                            <div class="small-box"></div>
+                            <span>Assigned</span>
+                        </div>
+
+                        <div class="design-box">
+                            <div class="small-box bg-color-2"></div>
+                            <span>Assigned</span>
+                        </div>
+
+                        <div class="design-box">
+                            <div class="small-box"></div>
+                            <span>Assigned</span>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="text-center">
+                                <p>&copy; Copyright by 2024 <a href="https://www.mawai.com/" target="_blank"
+                                        rel="nofollow">Mawai Infotech Ltd.</a> | All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Content -->
+        </div>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

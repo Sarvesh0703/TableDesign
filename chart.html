@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Skills Bar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            <div class="skill">
+                <div class="graph" style="height: 100%;">
+                    <div class="percent">100%</div>
+                </div>
+                <div class="name">HTML</div>
+            </div>
+
+            <div class="skill">
+                <div class="graph" style="height: 95%;">
+                    <div class="percent">95%</div>
+                </div>
+                <div class="name">CSS</div>
+            </div>
+
+            <div class="skill">
+                <div class="graph" style="height: 80%;">
+                    <div class="percent">65%</div>
+                </div>
+                <div class="name">jQuery</div>
+            </div>
+
+            <div class="skill">
+                <div class="graph" style="height: 90%;">
+                    <div class="percent">80%</div>
+                </div>
+                <div class="name">JavaScript</div>
+            </div>
+
+            <div class="skill">
+                <div class="graph" style="height: 50%;">
+                    <div class="percent">50%</div>
+                </div>
+                <div class="name">Wix</div>
+            </div>
+
+            <div class="skill">
+                <div class="graph" style="height: 70%;">
+                    <div class="percent">75%</div>
+                </div>
+                <div class="name">React js</div>
+            </div>
+
+            <div class="skill">
+                <div class="graph" style="height: 70%;">
+                    <div class="percent">70%</div>
+                </div>
+                <div class="name">Illustrator</div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const graphs = document.querySelectorAll('.graph');
+            graphs.forEach((graph, index) => {
+                if (index % 2 === 0) {
+                    graph.style.background = 'linear-gradient(0deg, #003ba5, #009ffe)';
+                }
+                else { graph.style.background = "linear-gradient(0deg, #ff002f, #009ffe)"; }
+            });
+        });
+    </script>
+</body>
+
+</html>
