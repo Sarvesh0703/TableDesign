@@ -1458,6 +1458,14 @@ ul.col_row:hover {
     .box .skill .graph {
         width: 20px;
     }
+
+    .top-nav span {
+        font-size: 11px;
+    }
+
+    .top-nav .nav-box {
+        padding: 8px 5px 8px 10px;
+    }
 }
 
 
