@@ -1457,4 +1457,15 @@ ul.col_row:hover {
 }
 
 
+@media (max-width: 350px) {
+    .accordion-list button {
+        font-size: 14px;
+    }
+
+    .col_row:not(.row-table) .col_cell:first-child {
+        padding-left: 0px;
+    }
+}
+
+
 /* Chatbot CSS */
