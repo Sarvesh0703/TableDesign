@@ -1459,13 +1459,6 @@ ul.col_row:hover {
         width: 20px;
     }
 
-    .top-nav span {
-        font-size: 11px;
-    }
-
-    .top-nav .nav-box {
-        padding: 8px 5px 8px 10px;
-    }
 }
 
 
@@ -1476,6 +1469,14 @@ ul.col_row:hover {
 
     .col_row:not(.row-table) .col_cell:first-child {
         padding-left: 0px;
+    }
+
+    .top-nav span {
+        font-size: 11px;
+    }
+
+    .top-nav .nav-box {
+        padding: 8px 5px 8px 10px;
     }
 }
 
