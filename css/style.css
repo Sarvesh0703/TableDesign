@@ -1480,5 +1480,11 @@ ul.col_row:hover {
     }
 }
 
+@media (max-width: 320px) {
+    .top-nav .nav-box {
+        padding: 8px 5px 8px 8px;
+    }
+}
+
 
 /* Chatbot CSS */
